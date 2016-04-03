@@ -1,0 +1,14 @@
+<nav role="navigation" class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="" class="brand-logo">
+        Logo
+      </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li ng-repeat="link in $ctrl.links">
+        <a ui-sref="{{link.component}}">{{link.name}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
