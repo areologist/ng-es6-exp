@@ -1,5 +1,5 @@
 /**
- * Prodives methods for creating nvd3 chart options objects with app defaults
+ * Provides methods for creating nvd3 chart options objects with app defaults
  * and custom selector predicates for data.
  * Also contains some BS data access code that won't survive long..
  */
@@ -14,9 +14,9 @@ class ChartFactory {
    * Builds nvd3 pie chart `options` object using app defaults and provided
    * selector predicates.
    * @param {Function} keyPredicate A function that when applied to a data
-   * item, returns the value to be used as a key.
+   * list item, returns the value to be used as a key.
    * @param {Function} valuePredicate A function that when applied to a data
-   * item, returns the scalar value that pairs with the key.
+   * list item, returns the scalar value that pairs with the key.
    * @returns {Object} A pie chart `options` object to be used in initializing
    * a nvd3 chart directive.
    */
