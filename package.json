@@ -9,14 +9,19 @@
     "test": "jest",
     "docs": "esdoc -c ./esdoc.json",
     "build": "./node_modules/.bin/webpack -p --progress --colors",
-    "build:prod": "NODE_ENV=production && npm run build",
-    "server": "webpack-dev-server --inline --content-base dist/ --history-api-fallback"
+    "deploy": "NODE_ENV=production && npm run build",
+    "server": "webpack-dev-server --inline --content-base dist/ --history-api-fallback",
+    "json": "json-server --watch ./data/db.json"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [ "/esdoc/"]
   },
   "author": "areologist",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.3",
     "angular-animate": "^1.5.3",
+    "angular-nvd3": "^1.0.5",
     "angular-ui-bootstrap": "^1.2.5",
     "angular-ui-router": "^1.0.0-alpha.1",
     "bootstrap": "^3.3.6",

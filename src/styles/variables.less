@@ -7,18 +7,18 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-base:              #000;
-@gray-darker:            lighten(@gray-base, 13.5%); // #222
-@gray-dark:              lighten(@gray-base, 20%);   // #333
-@gray:                   lighten(@gray-base, 33.5%); // #555
-@gray-light:             lighten(@gray-base, 46.7%); // #777
-@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+@gray-base:             #101213;
+@gray-darker:           #242d3d;
+@gray-dark:             #37444e;
+@gray:                  lighten(@gray-base, 33.5%);
+@gray-light:            lighten(@gray-base, 46.7%);
+@gray-lighter:          lighten(@gray-base, 86%);
 
-@brand-primary:         darken(#428bca, 6.5%); // #337ab7
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+@brand-primary:         #f58832;
+@brand-success:         #5da831;
+@brand-info:            #1082cb;
+@brand-warning:         #f48020;
+@brand-danger:          #ef5e5d;
 
 
 //== Scaffolding
@@ -144,9 +144,9 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #333;
-@btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-color:              @gray-dark;
+@btn-default-bg:                 @gray-lighter;
+@btn-default-border:             darken(@gray-lighter, 2%);;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;

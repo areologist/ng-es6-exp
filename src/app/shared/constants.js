@@ -1,3 +1,3 @@
 export const constants = {
-  api_url: '/',
+  api_url: 'http://localhost:3000',
 };

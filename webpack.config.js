@@ -28,8 +28,10 @@ module.exports = {
       { test: /\.css/, loader: 'style!css' },
       {
         test: /\.js?$/, loader: 'babel',
-        exclude: [/node_modules/, /\.spec\.js/]
+        exclude: [/node_modules/, /esdoc/, /__tests__/]
       },
+      // inline images under 8k
+      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' },
       // asset loaders for bootstrap
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file' },
       { test: /\.(woff|woff2)$/, loader: 'url?prefix=font/&limit=5000' },
@@ -46,7 +48,6 @@ module.exports = {
 
   devServer: {
     contentBase: './dist',
-    // hostname: 'mbp',
     hot: true
   }
 };
