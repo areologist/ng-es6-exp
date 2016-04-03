@@ -2,7 +2,7 @@
 
 WIP. Just trying out a variant of my preferred ng1 build.
 
-* Angular 1.5, ES2015
+* Angular 1.5, ES2015, RxJS-ES
 * Babel, Stage-1
 * ESLint, Airbnb style
 * ESDoc
@@ -31,5 +31,7 @@ To test that the environment is working properly run the following.
 ```cli
 npm run build
 ```
+
+Or run `npm start` if you want lint, test, build, and dev server.
 
 ***

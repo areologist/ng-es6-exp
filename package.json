@@ -1,7 +1,7 @@
 {
   "name": "ng-es6-exp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Reference project: Angular, RxJS, Babel, Webpack, Jest, ESDoc, ESLint...",
   "main": "index.js",
   "scripts": {
     "start": "npm run lint && npm run test && npm run build && npm run server",
@@ -12,7 +12,7 @@
     "build:prod": "NODE_ENV=production && npm run build",
     "server": "webpack-dev-server --inline --content-base dist/ --history-api-fallback"
   },
-  "author": "",
+  "author": "areologist",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.3",
