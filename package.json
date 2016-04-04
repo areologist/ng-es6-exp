@@ -14,7 +14,9 @@
     "json": "json-server --watch ./data/db.json"
   },
   "jest": {
-    "modulePathIgnorePatterns": [ "/esdoc/"]
+    "modulePathIgnorePatterns": [
+      "/esdoc/"
+    ]
   },
   "author": "areologist",
   "license": "ISC",
@@ -40,6 +42,7 @@
     "babel-preset-stage-1": "^6.5.0",
     "browser-sync": "^2.11.2",
     "css-loader": "^0.23.1",
+    "esdoc": "^0.4.6",
     "eslint": "^2.6.0",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-babel": "^3.1.0",
@@ -47,6 +50,8 @@
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.15.0",
     "jasmine": "^2.4.1",
+    "jest-cli": "^0.10.0",
+    "json-server": "^0.8.9",
     "less": "^2.6.1",
     "less-loader": "^2.2.3",
     "raw-loader": "^0.5.1",

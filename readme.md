@@ -13,13 +13,7 @@
 
 ## Setting Up
 
-First install global npm package dependencies
-
-```cli
-npm install -g jest-cli webpack webpack-dev-server json-server esdoc
-```
-
-Then install local npm packages by running the following from project root
+Install npm packages by running the following from project root
 directory where `package.json` resides.
 
 ```cli
